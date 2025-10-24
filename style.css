@@ -1,0 +1,147 @@
+/* ----------- COLOR PALETTE -----------
+Baby Blue:  #B3E5FC
+Sky Blue:   #81D4FA
+Indigo:     #3F51B5
+Deep Indigo:#283593
+--------------------------------------- */
+
+* {
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  background: linear-gradient(135deg, #B3E5FC, #3F51B5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background: #fff;
+  width: 380px;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(63, 81, 181, 0.3);
+  transition: all 0.3s ease;
+}
+
+.header {
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #3F51B5;
+  margin-bottom: 1.5rem;
+}
+
+h2 {
+  text-align: center;
+  color: #283593;
+  margin-bottom: 1.5rem;
+}
+
+.input-group {
+  margin-bottom: 1rem;
+  position: relative; /* Added for eye icon positioning */
+}
+
+.input-group label {
+  display: block;
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 0.3rem;
+}
+
+.input-group input,
+.input-group select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  transition: 0.3s;
+  background-color: #f9f9f9;
+}
+
+/* Add padding-right for eye icon space */
+.input-group input[type="password"] {
+  padding-right: 40px;
+}
+
+.input-group input:focus,
+.input-group select:focus {
+  border-color: #3F51B5;
+  box-shadow: 0 0 5px rgba(63, 81, 181, 0.4);
+  background-color: #fff;
+}
+
+/* Eye icon styling */
+.input-group .toggle-password {
+  position: absolute;
+  top: 40%;
+  right: 12px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #3F51B5;
+  font-size: 1.1rem;
+  transition: 0.2s ease;
+}
+
+.input-group .toggle-password:hover {
+  color: #283593;
+}
+
+/* Button */
+.btn {
+  width: 100%;
+  padding: 10px;
+  background: #3F51B5;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #283593;
+}
+
+/* Toggle links */
+.toggle {
+  text-align: center;
+  margin-top: 1rem;
+  color: #555;
+  font-size: 0.9rem;
+}
+
+.toggle a {
+  color: #3F51B5;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.toggle a:hover {
+  text-decoration: underline;
+}
+
+/* Subtle hover glow on container */
+.container:hover {
+  transform: scale(1.01);
+  box-shadow: 0 10px 25px rgba(63, 81, 181, 0.4);
+}
+
+/* Button color variants */
+.btn-indigo {
+  background-color: #3F51B5;
+  color: white;
+  transition: 0.3s;
+}
+
+.btn-indigo:hover {
+  background-color: #283593;
+  color: #fff;
+}
